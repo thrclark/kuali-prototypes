@@ -1,0 +1,18 @@
+
+.kc-docinfo:before { content: '\e900'; } /* '' */
+.kc-personnel:before { content: '\e901'; } /* '' */
+.kc-basics:before { content: '\e902'; } /* '' */
+.kc-user:before { content: '\e903'; } /* '' */
+.kc-attachment:before { content: '\e904'; } /* '' */
+.kc-questionnaire:before { content: '\e905'; } /* '' */
+.kc-budget-summary:before { content: '\e906'; } /* '' */
+.kc-budget:before { content: '\e907'; } /* '' */
+.kc-supplemental:before { content: '\e908'; } /* '' */
+.kc-summary:before { content: '\e909'; } /* '' */
+.kc-rates:before { content: '\e90a'; } /* '' */
+.kc-non-personnel:before { content: '\e90b'; } /* '' */
+.kc-subawards:before { content: '\e90c'; } /* '' */
+.kc-institution:before { content: '\e90d'; } /* '' */
+.kc-modular:before { content: '\e90e'; } /* '' */
+.kc-periods-totals:before { content: '\e910'; } /* '' */
+.kc-make-official:before { content: '\e911'; } /* '' */

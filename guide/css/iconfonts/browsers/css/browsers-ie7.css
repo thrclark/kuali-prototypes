@@ -1,0 +1,22 @@
+[class^="browser-"], [class*=" browser-"] {
+  font-family: 'browsers';
+  font-style: normal;
+  font-weight: normal;
+ 
+  /* fix buttons height */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+ 
+.browser-firefox { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe995;&nbsp;'); }
+.browser-chrome { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe996;&nbsp;'); }
+.browser-ie { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe997;&nbsp;'); }
+.browser-safari { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe998;&nbsp;'); }
+.browser-android { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe999;&nbsp;'); }
+.browser-apple { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1000;&nbsp;'); }
+.browser-win { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1001;&nbsp;'); }
+.browser-yes { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1002;&nbsp;'); }
+.browser-no { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1003;&nbsp;'); }
+.browser-warning { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe1004;&nbsp;'); }

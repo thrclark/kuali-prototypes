@@ -1,0 +1,515 @@
+/*
+ * Variables
+ */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 150%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Calibri', 'Arial', sans-serif;
+}
+a {
+  -webkit-transition: all 0.10s ease;
+  -moz-transition: all 0.10s ease;
+  -ms-transition: all 0.10s ease;
+  -o-transition: all 0.10s ease;
+  transition: all 0.10s ease;
+  color: #003ea8;
+}
+a:hover,
+a:focus {
+  color: #003184;
+}
+.btn-primary {
+  background: #003ea8;
+  border-color: #003184;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #003184;
+  border-color: #002d7a;
+}
+/*
+  * Header
+  */
+header.navbar {
+  background: #aa003e;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+header.navbar .title {
+  font-family: 'Calibri', 'Arial', sans-serif;
+}
+header.navbar .title a {
+  color: white;
+  font-weight: 700;
+  font-size: 150%;
+  text-shadow: rgba(0, 0, 0, 0.15) 0 2px 2px;
+}
+header.navbar .search {
+  margin-top: 10px;
+}
+/*
+ * Nav
+ */
+nav.navigation {
+  background: #f2f2f2;
+}
+nav.navigation .navbar-nav li {
+  position: relative;
+}
+nav.navigation .navbar-nav li a {
+  display: inline-block;
+  color: #222222;
+}
+nav.navigation .navbar-nav li a:hover,
+nav.navigation .navbar-nav li a:focus,
+nav.navigation .navbar-nav li a.opened {
+  background: #222222;
+  color: #ffffff;
+}
+nav.navigation .dropdown-menu {
+  min-width: 200px;
+  list-style: none;
+  background: #222222;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+nav.navigation .dropdown-menu li {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+nav.navigation .dropdown-menu li ul {
+  position: absolute;
+  left: -9999em;
+  top: 0;
+  width: 200px;
+  list-style: none;
+  background: #2f2f2f;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+nav.navigation .dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: #ffffff;
+}
+nav.navigation .dropdown-menu li a:hover,
+nav.navigation .dropdown-menu li a:focus {
+  background: #2f2f2f;
+  text-decoration: underline;
+}
+nav.navigation .dropdown-menu li:hover,
+nav.navigation .dropdown-menu li:focus {
+  background: #2f2f2f;
+}
+nav.navigation .dropdown-menu li:hover ul,
+nav.navigation .dropdown-menu li:focus ul {
+  left: 195px;
+}
+/*
+ * Breadcrumbs
+ */
+.breadcrumbs .breadcrumb {
+  background: transparent;
+  text-align: right;
+}
+/*
+ * Blocky navigation (CTAs)
+ */
+.cta-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cta-navigation li {
+  padding: 8px;
+  margin: 0;
+}
+.cta-navigation li a {
+  display: block;
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 3px;
+  background: #f2f2f2;
+  min-height: 175px;
+}
+.cta-navigation li a:hover,
+.cta-navigation li a:focus {
+  border: 1px solid black;
+  text-decoration: none;
+  background: #222222;
+  color: #ffffff;
+}
+.cta-navigation li:nth-child(4) {
+  clear: left;
+}
+.cta-navigation li.has-children a {
+  border-right: 3px double rgba(0, 0, 0, 0.1);
+  border-bottom: 3px double rgba(0, 0, 0, 0.1);
+}
+.cta-navigation li.has-children a:hover,
+.cta-navigation li.has-children a:focus {
+  border-right: 3px double #ffffff;
+  border-bottom: 3px double #ffffff;
+}
+.cta-navigation h2,
+.cta-navigation p {
+  margin: 0;
+}
+.cta-navigation h2 {
+  font-size: 1.5em;
+}
+.cta-navigation h2 .note {
+  color: #666 !important;
+  font-size: 75% !important;
+  text-transform: uppercase !important;
+}
+.cta-navigation p {
+  margin-top: 12px;
+}
+/*
+ * Page subnavigation
+ */
+.page-subnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-subnav ul li {
+  margin: 0;
+  padding: 0;
+}
+.page-subnav ul li a {
+  padding: 8px 16px;
+  display: block;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.page-subnav ul li a:hover,
+.page-subnav ul li a:focus {
+  background: #ffdde9;
+}
+.page-subnav ul li.active a {
+  background: #aa003e;
+  color: #ffffff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.page-subnav ul li:first-child a {
+  border-top: none;
+}
+/*
+ * Tab containers 
+ */
+.section {
+  position: absolute;
+  top: -9999em;
+}
+.section pre {
+  display: none;
+}
+.section.active {
+  position: relative;
+  top: auto;
+}
+.section.active section {
+  margin-bottom: 48px;
+}
+.section.active p {
+  margin: 18px 0;
+}
+.section.active h4 {
+  margin-top: 24px;
+}
+.section.active h5 {
+  margin-top: 24px;
+  font-size: 110%;
+}
+.section.active ul li,
+.section.active ol li {
+  margin: 8px 0;
+  line-height: 120%;
+}
+.section.active ul ul li,
+.section.active ol ul li,
+.section.active ul ol li,
+.section.active ol ol li {
+  margin: 6px 0;
+}
+.section.active figure {
+  display: block;
+  margin: 0 0 24px 0;
+}
+.section.active figure img {
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  max-width: 100%;
+}
+.section.active figure figcaption {
+  display: block;
+  font-style: italic;
+  color: #626262;
+  line-height: 120%;
+  margin-top: 8px;
+}
+.section.active .example {
+  padding: 3.5em 1em 2em;
+  border-top: 1px dotted #ccc;
+}
+.section.active .example .figures {
+  width: 48%;
+  padding: 0 2% 0 0;
+  float: left;
+}
+.section.active .example .figures figure {
+  clear: left;
+  width: 100%;
+}
+.section.active .example .figures figure img {
+  width: 100%;
+  height: auto;
+}
+.section.active .example .details {
+  text-align: left;
+  width: 48%;
+  padding: 0 0 0 1%;
+  float: left;
+}
+.section.active .example .details h3 {
+  margin-top: 0;
+}
+.section.active .example .details ul {
+  list-style-type: none;
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-size: 90%;
+}
+.section.active .example .details ul li {
+  padding-left: 20px;
+}
+.section.active .example .details ul li:before {
+  font-family: "Kuali";
+  float: left;
+  display: block;
+  width: 20px;
+  margin-left: -20px;
+}
+.section.active .example .details ul.list-pros li:before {
+  content: '\e800';
+  color: #0a8f08;
+}
+.section.active .example .details ul.list-cons li:before {
+  content: '\e807';
+  color: #cc0804;
+}
+.section.active .example.kuali-recommended {
+  position: relative;
+  background: #f1f8e9;
+}
+.section.active .example.kuali-recommended:before {
+  display: inline-block;
+  position: absolute;
+  content: 'Kuali Recommended';
+  top: -1px;
+  left: 50%;
+  margin-left: -12.5%;
+  padding: .25em 1em;
+  text-transform: uppercase;
+  background: #33691e;
+  color: #d0f8ce;
+  font-weight: 700;
+  border-top: 1px solid #264d16;
+}
+.section.active pre {
+  display: block;
+  overflow: visible;
+  font-size: 13px;
+}
+.section.active pre::before {
+  content: attr(data-lang);
+  position: relative;
+  top: -1em;
+}
+.section.active pre > code {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+}
+.section:focus {
+  outline: none;
+}
+/*
+ * Footer
+ */
+footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: .9em;
+}
+/*
+ * Global overrides
+ */
+h1 {
+  margin-top: 0;
+}
+/*
+ * Confluence additions
+ */
+table {
+  border: 1px solid #e4e4e4;
+  background: #f8f8f8;
+  border-collapse: collapse;
+  font-size: .9em;
+}
+table tr th,
+table tr td {
+  padding: .5em;
+  border: 1px solid #e4e4e4;
+  vertical-align: top;
+}
+table tr th {
+  background: #f2f2f2;
+}
+table tr th:first-child {
+  width: 5%;
+  text-align: center;
+}
+table tr th:nth-child(2) {
+  width: 45%;
+}
+table tr th:nth-child(3) {
+  width: 20%;
+}
+table tr th:nth-child(4) {
+  width: 20%;
+}
+/*
+ * Customized
+ */
+table.browsers thead td {
+  text-align: center;
+}
+table.browsers thead th {
+  width: 8.33%;
+  text-align: center;
+}
+table.browsers thead .b-icon {
+  font-size: 24px;
+}
+table.browsers thead .browser-ie {
+  color: #0099cc;
+}
+table.browsers thead .browser-firefox {
+  color: orange;
+}
+table.browsers thead .browser-safari {
+  color: #0099aa;
+}
+table.browsers thead .browser-chrome {
+  color: #c80405;
+}
+table.browsers tbody td {
+  text-align: center;
+}
+table.browsers tbody td .browser-yes {
+  color: lightgreen;
+}
+table.browsers tbody td .browser-no {
+  color: red;
+}
+table.browsers tbody td .browser-warning {
+  color: gold;
+}
+/*
+ * Responsive stuff
+ * Reduces font size
+ */
+@media all and (max-width: 768px) {
+  body {
+    font-size: 150%;
+  }
+  body header button {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    -webkit-transition: all 0.10s ease;
+    -moz-transition: all 0.10s ease;
+    -ms-transition: all 0.10s ease;
+    -o-transition: all 0.10s ease;
+    transition: all 0.10s ease;
+  }
+  body header button:focus,
+  body header button:hover {
+    color: white !important;
+    border: 1px solid #ffffff !important;
+  }
+  body #navigation li a {
+    display: block;
+  }
+  body #navigation li li a {
+    color: #222;
+  }
+  body #navigation li li a:hover,
+  body #navigation li li a:focus {
+    color: white;
+  }
+  body .sticky-wrapper {
+    display: none;
+  }
+  body .section {
+    position: relative;
+    top: auto;
+  }
+}
+/*
+ * Google Custom Search Enging
+ * Overrides
+ */
+.gsc-control-cse {
+  line-height: 100% !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  border-color: transparent !important;
+  border: 0px !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box {
+  border: 0px !important;
+  font-size: 100% !important;
+  background: transparent !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box .gsc-input-box {
+  height: auto !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box td {
+  border: 0px !important;
+  padding: 0 !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box input.gsc-input {
+  height: auto !important;
+  padding: 3px !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box td.gsc-search-button input {
+  background-image: url('http://www.google.com/uds/css/v2/search_box_icon.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 6px 6px !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box td.gsc-search-button input.gsc-search-button {
+  font-size: 100% !important;
+  border: 1px solid transparent !important;
+}
+.gsc-control-cse .gsc-control-wrapper-cse form.gsc-search-box table.gsc-search-box td.gsc-search-button input.gsc-search-button-v2 {
+  min-width: auto !important;
+  padding: 12px !important;
+  margin-top: 3px !important;
+}

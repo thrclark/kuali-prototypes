@@ -1,0 +1,29 @@
+[class^="kc-"], [class*=" kc-"] {
+  font-family: 'kc';
+  font-style: normal;
+  font-weight: normal;
+ 
+  /* fix buttons height */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+}
+ 
+.kc-docinfo { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;&nbsp;'); }
+.kc-personnel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;&nbsp;'); }
+.kc-basics { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;&nbsp;'); }
+.kc-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;&nbsp;'); }
+.kc-attachment { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;&nbsp;'); }
+.kc-questionnaire { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;&nbsp;'); }
+.kc-budget-summary { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;&nbsp;'); }
+.kc-budget { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;&nbsp;'); }
+.kc-supplemental { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;&nbsp;'); }
+.kc-summary { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe909;&nbsp;'); }
+.kc-rates { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90a;&nbsp;'); }
+.kc-non-personnel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90b;&nbsp;'); }
+.kc-subawards { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90c;&nbsp;'); }
+.kc-institution { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90d;&nbsp;'); }
+.kc-modular { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90e;&nbsp;'); }
+.kc-periods-totals { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe910;&nbsp;'); }
+.kc-make-official { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;&nbsp;'); }

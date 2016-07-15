@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+ 
+.browser-firefox:before { content: '\e995'; } /* '' */
+.browser-chrome:before { content: '\e996'; } /* '' */
+.browser-ie:before { content: '\e997'; } /* '' */
+.browser-safari:before { content: '\e998'; } /* '' */
+.browser-android:before { content: '\e999'; } /* '' */
+.browser-apple:before { content: '󡀀'; } /* '\e1000' */
+.browser-win:before { content: '󡀁'; } /* '\e1001' */
+.browser-yes:before { content: '󡀂'; } /* '\e1002' */
+.browser-no:before { content: '󡀃'; } /* '\e1003' */
+.browser-warning:before { content: '󡀄'; } /* '\e1004' */
